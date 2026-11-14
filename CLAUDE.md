@@ -32,5 +32,13 @@ Repo: github.com/EgalJ/Client-Portfolio-Proposals (public)
 - Ask before big decisions, for example whether VNQ counts as "stocks" for the allocation limits.
 - Writing style: concise, casual, direct. No em dashes.
 
+## Decisions from notebook 02
+- Notebooks/02_portfolio_optimization.ipynb: max Sharpe portfolio per client with PyPortfolioOpt. Saves data/optimized_weights.csv and charts/optimized_weights.png.
+- Expected returns = historical CAGR, risk = sample covariance, risk-free rate 2%
+- "Stocks" = SPY, IWM, EFA, EEM, VNQ (VNQ counts as stocks)
+- Max 40% per ETF, GLD capped at 10% (uncapped, the optimizer put 20% to 35% in gold)
+- David: MUB >= 15%. Robert and Linda: SHY >= 5% (about 1.25 years of withdrawals), TIP >= 10%
+- Known weakness: optimizer chases past returns, so EFA, EEM, VNQ and AGG get 0%
+
 ## Next step
-Create Notebooks/02_portfolio_optimization.ipynb and build an optimized portfolio for each client within their limits.
+Create Notebooks/03_backtest.ipynb and backtest each client's portfolio since 2007 using data/optimized_weights.csv.
