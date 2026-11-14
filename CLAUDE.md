@@ -6,8 +6,8 @@ Repo: github.com/EgalJ/Client-Portfolio-Proposals (public)
 
 ## Plan
 1. Data exploration (done)
-2. Optimized ETF portfolio for each client within their allocation limits, using PyPortfolioOpt (next)
-3. Backtest each portfolio since 2007
+2. Optimized ETF portfolio for each client within their allocation limits, using PyPortfolioOpt (done)
+3. Backtest each portfolio since 2007 (next)
 4. Stress tests: 2008, 2020, 2022
 5. One-page client proposals in the proposals/ folder
 6. README write-up with key charts and results
